@@ -26,6 +26,10 @@ const initialState: State = {
   error: undefined,
 };
 
+export const getReferrer (): Promise<ReferrerDetails> {
+  return NativeModules.PlayInstallReferrerModule.getReferrer
+}
+
 export default function useInstallReferrer() {
   const [{ status, data, error }, setState] = useReducer(
     (s: State, a: Partial<State>) => ({ ...s, ...a }),
