@@ -1,10 +1,10 @@
 {
-  "name": "@spicysparks/react-native-google-play-install-referrer",
-  "version": "1.0.7",
+  "name": "@slavkojos/react-native-google-play-install-referrer",
+  "version": "1.0.8",
   "description": "Retrieve referral details on app install from play store",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
-  "types": "lib/typescript/src/index.d.ts",
+  "types": "lib/typescript/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
   "files": [
