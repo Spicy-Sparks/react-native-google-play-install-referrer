@@ -26,7 +26,7 @@ const initialState: State = {
   error: undefined,
 };
 
-export const getReferrer (): Promise<ReferrerDetails> {
+export const getReferrer(): Promise<ReferrerDetails> {
   return NativeModules.PlayInstallReferrerModule.getReferrer
 }
 
