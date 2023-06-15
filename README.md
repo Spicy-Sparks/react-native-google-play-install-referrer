@@ -33,6 +33,23 @@ export default function App() {
 }
 ```
 
+```js
+import { getReferrer } from 'react-native-google-play-install-referrer';
+
+export default function App() {
+
+  React.useEffect(() => {
+    try {
+      const referrer = await getReferrer()
+    }
+    catch (err) {
+      console.log(err)
+    }
+  }, []);
+  return <></>;
+}
+```
+
 On Success the data will have these values:
 
 | key                       | value type | description                                                                                         |
